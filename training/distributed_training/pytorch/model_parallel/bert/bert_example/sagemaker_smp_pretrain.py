@@ -56,6 +56,10 @@ from tqdm import tqdm, trange
 
 from utils import format_step, get_rank, get_world_size, is_main_process
 
+os.system('pip install -r requirments.txt')
+
+import wandb
+
 torch._C._jit_set_profiling_mode(False)
 torch._C._jit_set_profiling_executor(False)
 
